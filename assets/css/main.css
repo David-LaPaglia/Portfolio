@@ -1,7 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -18,12 +17,12 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -99,11 +98,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #00008B;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4913be 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #4913be 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #4913be 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #4913be 15%, #5f4d93 85%);
+		background-color: #436883;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #436883 15%, #746899 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #436883 15%, #746899 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #436883 15%, #746899 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #436883 15%, #746899 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,17 +119,15 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #2464c5;
 		color: rgba(255, 255, 255, 0.65);
 	}
-
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Times New Roman", Times, serif;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
-
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
