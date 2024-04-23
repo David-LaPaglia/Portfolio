@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.28.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.18.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.24.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 300},
+    "axis": {"labelFontSize": 12, "titleFontSize": 14},
+    "axisX": {"labelAngle": 0},
+    "title": {
+      "anchor": "middle",
+      "color": "black",
+      "font": "Roboto",
+      "fontSize": 20
+    }
+  },
+  "data": {"name": "data-6d8ab1e5d61a9d0eb0e14daf3f61f6d3"},
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "Color Category",
+      "legend": {"title": "Color Category"},
+      "scale": {"scheme": "tableau20"},
+      "type": "nominal"
+    },
+    "opacity": {
+      "condition": {"value": 1, "selection": "selector003"},
+      "value": 0.5
+    },
+    "order": {"field": "Count", "sort": "descending", "type": "quantitative"},
+    "tooltip": [
+      {"field": "Stacked Category", "type": "nominal"},
+      {"field": "Color Category", "type": "nominal"},
+      {"field": "Count", "type": "quantitative"},
+      {"field": "Example_Song", "type": "nominal"}
+    ],
+    "x": {"field": "Stacked Category", "title": "Genres", "type": "nominal"},
+    "y": {"field": "Count", "stack": "zero", "type": "quantitative"}
+  },
+  "height": 400,
+  "selection": {
+    "selector003": {
+      "type": "single",
+      "on": "mouseover",
+      "fields": ["Color Category"],
+      "nearest": true,
+      "empty": "none"
+    }
+  },
+  "title": "Pop Genres vs Other Genres with Song Examples",
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-6d8ab1e5d61a9d0eb0e14daf3f61f6d3": [
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "dance pop",
+        "Count": 327,
+        "Example_Song": "TiK ToK"
+      },
+      {
+        "Stacked Category": "Other Genres",
+        "Color Category": "Other",
+        "Count": 118,
+        "Example_Song": "Hey, Soul Sister"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "pop",
+        "Count": 60,
+        "Example_Song": "Just the Way You Are"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "canadian pop",
+        "Count": 34,
+        "Example_Song": "Baby"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "barbadian pop",
+        "Count": 15,
+        "Example_Song": "Only Girl (In The World)"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "electropop",
+        "Count": 13,
+        "Example_Song": "#SELFIE"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "art pop",
+        "Count": 8,
+        "Example_Song": "Dog Days Are Over"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "hip pop",
+        "Count": 6,
+        "Example_Song": "Empire State of Mind (Part II) Broken Down"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "australian pop",
+        "Count": 5,
+        "Example_Song": "Whataya Want from Me"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "colombian pop",
+        "Count": 3,
+        "Example_Song": "Loca"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "candy pop",
+        "Count": 2,
+        "Example_Song": "I Love It (feat. Charli XCX)"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "acoustic pop",
+        "Count": 2,
+        "Example_Song": "Turning Page"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "baroque pop",
+        "Count": 2,
+        "Example_Song": "Some Nights"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "folk-pop",
+        "Count": 2,
+        "Example_Song": "Let Her Go"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "indie pop",
+        "Count": 2,
+        "Example_Song": "Animal"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "french indie pop",
+        "Count": 1,
+        "Example_Song": "Prayer in C - Robin Schulz Radio Edit"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "metropopolis",
+        "Count": 1,
+        "Example_Song": "Pompeii"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "moroccan pop",
+        "Count": 1,
+        "Example_Song": "Boom Boom"
+      },
+      {
+        "Stacked Category": "Pop",
+        "Color Category": "danish pop",
+        "Count": 1,
+        "Example_Song": "7 Years"
+      }
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
